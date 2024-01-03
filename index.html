@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lua</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+</head>
+<body>
+    <div class="jogo-lua">
+        <div class="container-upgrades">
+                <h1 class="titulo">Upgrades</h1>
+            <table id="ver-click-info" onmouseover="mostrarInfoClick(event)" onmouseout="esconderInfo()" onclick="upgrade1()" >
+                <tr class="upg1">
+                  <th class="mais-diamantes-info">Mais diamantes</th>
+                  <th class="valorUpg1">Valor: 100</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="foto"><img src="./assets/upgrade1_diamantes.png"><h1 class="upgrade-level upgText1">0</h1></td>
+                  </tr>
+            </table>
+            <table  id="ver-auto-info" onmouseover="mostrarInfoAuto(event)" onmouseout="esconderInfoAuto()" onclick="upgrade2()" >
+                  <tr class="upg2">
+                    <th class="auto-diamantes-info">Mais luas</th>
+                    <th class="valorUpg2">Valor: 250</th>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="foto"><img src="./assets/upgrade2_luas.png"><h1 class="upgrade-level upgText2">0</h1></td>
+                    </tr>
+                </table>
+
+        </div> 
+        <div class="status">
+            <div class="diamante">
+                <img src="./assets/diamante.png">
+            </div>
+            <h1 class="texto-diamante">0</h1>
+            <div class="fome">
+                <img src="./assets/fome.png">
+            </div>
+            <h1 class="texto-fome">100%</h1>
+            <div class="dpc"><h1>Dpc: 2</h1></div>
+            <div class="dps"><p>Dps: 0</p></div>
+            
+        <div class="lua1" onclick="clickDiamante(event)">
+            <img draggable="false" src="./assets/lua1.png" class="lua1">
+            </div>
+            <button class="btn-comida" onclick="comer()">Dar comida</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
